@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jessica Maria</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        function Persona() {
+            this.nombre = prompt('Ingrese nombre de la persona:', '');
+            this.edad = parseInt(prompt('Ingrese edad:', ''));
+        }
+
+        function Empresa() {
+            this.edadTope = 60;
+            this.nopuedeEntrar = nopuedeEntrar;
+        }
+
+        function nopuedeEntrar(per) {
+            if (per.edad >= this.edadTope)
+                return true;
+            else
+                return false;
+        }
+
+        var per1 = new Persona();
+        var per2 = new Persona();
+        var per3 = new Persona();
+        var empresa = new Empresa();
+        var cant = 0;
+        if (empresa.nopuedeEntrar(per1))
+            cant++;
+        if (empresa.nopuedeEntrar(per2))
+            cant++;
+        if (empresa.nopuedeEntrar(per3))
+            cant++;
+        document.write('Las personas que no pueden entrar por su edad son:' + cant);
+    </script>
+
+</body>
+
+</html>
